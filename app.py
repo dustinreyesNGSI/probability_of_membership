@@ -8,7 +8,7 @@ from utils import download_link
 def main():
     st.title('PSSLAI Probability of Membership Predictor')
     st.subheader('Please upload the CSV file.')
-    data_file = st.file_uploader("Click below to browse",type=['csv'])
+    data_file = st.file_uploader("", type=['csv'])
 
     if st.button("Predict!"):
         if data_file is not None:
