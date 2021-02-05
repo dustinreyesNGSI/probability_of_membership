@@ -1,6 +1,7 @@
 from src.dataReader import dataReader
-from src.dataValidation import dataValidation
+from src.dataPreprocessor import dataPreprocessor
 import pandas as pd
 
-dV = dataValidation('./data/actual.csv')
-print(dV.get_df().head())
+dPre = dataPreprocessor('./data/actual.csv')
+n, r = dPre.get_model_df()
+print(n.head())

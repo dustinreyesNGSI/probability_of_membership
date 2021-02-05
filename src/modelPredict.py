@@ -6,7 +6,6 @@ import pickle
 import streamlit as st
 
 from sklearn.preprocessing import LabelEncoder
-from src.dataValidation import dataValidation
 from config.config import upload_cols, lbl_encoders
 
 class modelPredict:
